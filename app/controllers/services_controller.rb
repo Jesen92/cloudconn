@@ -66,7 +66,6 @@ class ServicesController < ApplicationController
       flash[:calc_alert] = I18n.t("controllers.services.spam_indicator")
     end
 
-
     redirect_to services_index_path(anchor: 'CALC')
   end
 
@@ -81,6 +80,22 @@ class ServicesController < ApplicationController
     end
 
     redirect_to root_path
+  end
+
+  def general_conditions_download
+    if I18n.locale == :hr
+      send_file(
+          "#{Rails.root}/public/assets/OUP_Veeam Cloud Connect_web_hr.pdf",
+          filename: "Uvjeti upotrebe usluge VCC.pdf",
+          type: "application/pdf"
+      )
+    else
+      send_file(
+          "#{Rails.root}/public/assets/OUP_Veeam Cloud Connect_web_en.pdf",
+          filename: "General terms and conditions VCC.pdf",
+          type: "application/pdf"
+      )
+    end
   end
 
   private

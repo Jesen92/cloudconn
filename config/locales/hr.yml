@@ -29,6 +29,7 @@ hr:
       section_break: "Registrirajte se i sastavite najbolju konfiguraciju servisa za vašu tvrtku"
       section_break_user: "Izradite najbolju konfiguraciju servisa za vašu tvrtku ili besplatno isprobajte uslugu"
       calculator:
+        download_terms: "* Preuzmite opće uvjete pružanja usluge Veeam Cloud Connect"
         price: "Cijena odabranih usluga"
         price_packet: "U cijenu je uključeno"
         price_disclaimer: "Porez na dodanu vrijednost nije uključen u cijenu već se obračunava po važećoj stopi na dan izdavanja računa."

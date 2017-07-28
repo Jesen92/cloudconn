@@ -50,6 +50,7 @@ en:
       section_break: "Register and assemble the best configuration of services for your company"
       section_break_user: "Make the best configuration of services for your company or free trial of the service"
       calculator:
+        download_terms: "* Download general terms and conditions Veeam Cloud Connect"
         price: "The price of selected services"
         price_packet: "The price includes"
         price_disclaimer: "Porez na dodanu vrijednost nije uključen u cijenu već se obračunava po važećoj stopi na dan izdavanja računa."

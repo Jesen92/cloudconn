@@ -19,6 +19,7 @@ Rails.application.routes.draw do
       post :contact_us, on: :collection
       post :subscriber_create, on: :collection
       get :free_trial_request, on: :collection
+      get :general_conditions_download, on: :collection
     end
     root 'services#index'
     devise_for :users, controllers: {sessions: 'users/sessions', registrations: 'users/registrations', confirmations: 'users/confirmations', passwords: 'users/passwords'}
