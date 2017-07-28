@@ -23,6 +23,8 @@ hr:
       welcome_text: "Bok"
   services:
     index:
+      contact_text_first: "Imate dodatnih pitanja?"
+      contact_text_second: "Kontaktirajte nas i zatražite dodatne informacije."
       section_break_about: "Više o usluzi"
       home_header: "Veeam Cloud Connect Backup i Disaster Recovery Usluga"
       home_paragraph: "Iskoristite i Vi mogućnosti tehnologije i postanite „Always On” tvrtka"
@@ -174,6 +176,8 @@ hr:
         back: "Nazad"
     registrations:
       new:
+        yes_indicator: "Da"
+        no_indicator: "Ne"
         form: "Registracija"
         fname: "Ime"
         lname: "Prezime"

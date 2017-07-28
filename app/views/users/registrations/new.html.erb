@@ -109,7 +109,7 @@
                        <%= t(".veeam_user_html") %>
                         </div>
                     <% end %>
-                    <%= f.collection_radio_buttons :veeam_user,[[true, 'DA'], [false, 'NE']], :first, :last, input_html: {required: true}, item_wrapper_tag: "radio_wrapper_tag",item_wrapper_class: "radio_button_wrapper", :checked => :false %>
+                    <%= f.collection_radio_buttons :veeam_user,[[true, t(".yes_indicator")], [false, t(".no_indicator")]], :first, :last, input_html: {required: true}, item_wrapper_tag: "radio_wrapper_tag",item_wrapper_class: "radio_button_wrapper", :checked => :false %>
                   </section>
                   </div>
                   <div class="row">

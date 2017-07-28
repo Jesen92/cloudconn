@@ -23,8 +23,7 @@ class ApplicationController < ActionController::Base
     #puts params[:locale]
 
     #I18n.locale = params[:locale] || I18n.default_locale
-    I18n.default_locale = :hr
-    I18n.locale = :hr
+    I18n.locale = params[:locale] || I18n.default_locale
 =begin
     if params[:locale].present?
       I18n.locale = params[:locale]

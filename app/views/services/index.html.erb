@@ -43,11 +43,9 @@
             <% end %>
             <!-- ukljuci kada dode ENG prijevod -->
             <% if I18n.locale == :hr %>
-            <!--
             <li><%= link_to "EN ", locale: "en" %></li>
             <% else %>
             <li><%= link_to "HR ", locale: "hr" %></li>
-            -->
             <% end %>
           </ul>
         </div>
@@ -812,8 +810,8 @@
         <!-- Start Contact Section Title-->
         <div class="section_title">
           <h2><%= t(".get_in_touch") %></h2>
-          <p>Imate dodatnih pitanja?</br>
-          Kontaktirajte nas i zatražite dodatne informacije.</p>
+          <p><%= t(".contact_text_first") %></br>
+            <%= t(".contact_text_second") %></p>
         </div>
       </div>
     </div>
@@ -843,7 +841,7 @@
 
             <div class="col-md-8">
               <%= f.input :body ,required: true, label: false, input_html: { id: "message", rows: "25", cols: "10", class: "form-control"}, placeholder: t(".contact_us_body"), :as => :text %>
-              <%= f.button :submit, t(".contact_us_send"), class: "btn btn-default submit-btn" %>
+              <%= f.button :submit, t(".contact_us_send"), class: "btn btn-default submit-btn", id: "submit_contact_button" %>
             </div>
           </div>
           <div class="row">
@@ -851,7 +849,7 @@
               <% unless flash[:recaptcha_error].nil? %>
                 <div class="alert alert-danger" role="alert"><%= flash[:recaptcha_error] %></div>
               <% end %>
-              <%= recaptcha_tags %>
+              <%= recaptcha_tags callback: 'enableBtn' %>
             </div>
           </div>
         <% end %>
@@ -889,7 +887,7 @@
       <div class="col-md-6">
         <div class="copy_right_text">
           <!-- COPYRIGHT TEXT -->
-          <p>Copyright &copy; 2016.</p>
+          <p>Copyright &copy; 2017.</p>
           <p><a href="http://www.megatrend.com/" target="_blank">Megatrend Poslovna Rješenja</a></p>
           <p><% if user_signed_in? %>
                 <% if current_user.admin? %>
@@ -991,6 +989,13 @@
             </div>
 
 <script>
+
+    document.getElementById("submit_contact_button").disabled = true;
+
+    function enableBtn(){
+        document.getElementById("submit_contact_button").disabled = false;
+    }
+
   //KALKULATOR SELECT VALUE
   var License=0;
   var Service=0;

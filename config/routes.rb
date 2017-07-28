@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   ActiveAdmin.routes(self)
-  scope ":locale", locale: /#{I18n.available_locales.join("|")}/ , defaults: {locale: "hr"} do
+  scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
     resources :services do
       post :calculator, on: :collection
       post :contact_us, on: :collection
