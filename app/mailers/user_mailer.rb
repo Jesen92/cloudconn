@@ -8,7 +8,7 @@ class UserMailer < ApplicationMailer
     if locale == "hr"
       mail(to: @user.email, subject: "Korisnički detalji", template_path: 'user_mailer', template_name: 'generated_password_hr')
     else
-      mail(to: @user.email, subject: "Account Details")
+      mail(to: @user.email, subject: "Account Details", template_path: 'user_mailer', template_name: 'generated_password')
     end
   end
 

@@ -28,7 +28,7 @@
 <body>
 <div class="container" style="margin-top: 5px; margin-bottom: 35px">
   <div class="page-header">
-    <h1><span style="color: #A9CC2D; ">Welcome to Cloud Connect</span><small>, <%= @email %></small></h1>
+    <h1><span style="color: #A9CC2D; ">Welcome to Veeam Cloud Connect</span><small>, <%= @email %></small></h1>
   </div>
   <div class="container" style="margin-top: 30px">
     <div class="row" >
@@ -37,17 +37,13 @@
       </div>
     </div>
   </div>
+  <h3 style="margin-top:25px; margin-bottom:25px;">Contact mail:<span> <%= mail_to "cloudconnect@megatrend.com" %></span></h3>
   <div class="container" style="margin-top: 10px;">
-    <h3>Using the calculator you have chosen the following items for CloudConnect service:</h3>
+    <h3>You have selected the following items for the Veeam Cloud Connect service:</h3>
 
     <div class="row">
       <div class="col-md-12">
         <table class="table_padding">
-          <tr>
-            <td >User type</td>
-            <td ><%= @veeam_user %></td>
-            <td align="right"><% unless @veeam_user_price.to_i <= 0 %><%= number_to_currency(@veeam_user_price, :unit => "" ) %><% end %></td>
-          </tr>
           <tr>
             <td >SERVICE:</td>
             <td ><%= @service %></td>
@@ -72,7 +68,7 @@
           <% end %>
           <% unless @extra_storage.empty? %>
               <tr>
-                <td >ADDITONAL STRAGE:</td>
+                <td >ADDITIONAL SPACE:</td>
                 <td ><%= @extra_storage.to_i/100 %>x100 GB</td>
                 <td align="right"><%= number_to_currency(@extra_storage_price, :unit => "" ) %></td>
               </tr>
@@ -90,16 +86,26 @@
 
     <div class="row">
       <div class="col-md-6">
-        <p>Price is expressed in EURO.</br>
-          For users in Croatia price is calculated in kunas according to the selling rate of RBA on the date of invoice.
+        <p>The price is expressed in EUR.</br>
+          For customers in the Republic of Croatia, the price is calculated in HRK equivalent at the RBA exchange rate on the day of issue of the invoice.</br>
+          Value Added Tax is not included in the price but is calculated at the applicable rate on the day the invoice is issued.</br>
+          </br>
+          The calculation applies to users using the commercial Veeam "Backup & Replication" license.
         </p>
       </div>
     </div>
 
-    <h4>Use our online calculator. Register and you'll be able to use the calculator  online!</h4>
+    <h4>Register and use our online calculator!</h4>
   </div>
+  <h3 style="margin-top:25px; margin-bottom:25px;">Contact mail:<span> <%= mail_to "cloudconnect@megatrend.com" %></span></h3>
   <hr>
-  <h4  style="margin-top: 10px"><span style="color: #A9CC2D; ">Cloud Connect</span> - ba an <span style="color: #A9CC2D; ">„Always On”</span> company!</h4>
+  <h4  style="margin-top: 10px"><span style="color: #A9CC2D; ">Veeam Cloud Connect</span> - be <span style="color: #A9CC2D; ">„Always On”</span>!</h4>
+  <br/>
+  <div class="row">
+    <div class="col-md-8 col-md-2">
+      <small>If you have received this message by mistake or it is not intended to you, do not use, copy, distribute or open attachments Delete it immediately from your computer system and notify the sender that you have done so. Thank you!</small>
+    </div>
+  </div>
 </div>
 
 </body>

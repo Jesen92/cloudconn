@@ -3,24 +3,27 @@
 <head>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-  <div class="container" style="margin-top: 30px">
-    <div class="row" >
-      <div class="col-md-4">
-        <%= image_tag "mpr_logo.png", width: "250", style: "padding-top: 18px;" %>
-      </div>
-      <div class="col-md-4">
-        <%= image_tag "veeam_logo.png", width: "250" %>
-      </div>
-    </div>
-  </div>
+
 </head>
 <body>
 <div class="container" style="margin-top: 5px; margin-bottom: 35px">
   <div class="page-header">
-    <h1><span style="color: #A9CC2D; ">Cloud Connect</span> <small><%= @email %></small></h1>
+    <h1><span style="color: #A9CC2D; ">Veeam Cloud Connect</span> <small><%= @email %></small></h1>
   </div>
-  <h4>Your request for free trial has been sent! We will contact you with additional information as soon as possible.</h4>
-
+  <div class="container" style="margin-top: 30px">
+    <div class="row" >
+      <div class="col-md-4">
+        <%= image_tag "logomail_new.png", width:"400px",style: "padding-top: 18px;" %>
+      </div>
+    </div>
+    <h3 style="margin-top:25px; margin-bottom:25px;">Contact mail: <span> <%= mail_to "cloudconnect@megatrend.com" %></span></h3>
+  </div>
+  <div style="margin-top: 15px">
+    <h4>Your inquiry for a free trial has been submitted! We will contact you with additional information.</h4>
+  </div>
+  <h3 style="margin-top:25px; margin-bottom:25px;">Contact mail: <span> <%= mail_to "cloudconnect@megatrend.com" %></span></h3>
+  <hr>
+  <h4  style="margin-top: 10px"><span style="color: #A9CC2D; ">Veeam Cloud Connect</span> - be <span style="color: #A9CC2D; ">„Always On”</span>!</h4>
 </div>
 </body>
 </html>
