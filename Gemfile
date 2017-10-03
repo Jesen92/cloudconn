@@ -37,6 +37,7 @@ gem "recaptcha", require: "recaptcha/rails"
 gem 'dotenv-rails', :groups => [:development, :test]
 
 gem 'cookies_eu'
+gem 'google-analytics-rails', '1.1.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
