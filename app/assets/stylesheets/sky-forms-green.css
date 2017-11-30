@@ -2,10 +2,10 @@
 /* normal state */
 /**/
 .sky-form .toggle i:before {
-	background-color: #f39c12;
+	background-color: #00a8ad;
 }
 .sky-form .button {
-	background-color: #f39c12;
+	background-color: #00a8ad;
 }
 
 
@@ -18,11 +18,11 @@
 .sky-form .radio:hover i,
 .sky-form .checkbox:hover i,
 .sky-form .toggle:hover i {
-	border-color: #f39c12;
+	border-color: #00a8ad;
 }
 .sky-form .rating input + label:hover,
 .sky-form .rating input + label:hover ~ label {
-	color: #f39c12;
+	color: #00a8ad;
 }
 
 
@@ -35,7 +35,7 @@
 .sky-form .radio input:focus + i,
 .sky-form .checkbox input:focus + i,
 .sky-form .toggle input:focus + i {
-	border-color: #f39c12;
+	border-color: #00a8ad;
 }
 
 
@@ -43,16 +43,16 @@
 /* checked state */
 /**/
 .sky-form .radio input + i:after {
-	background-color: #f39c12;
+	background-color: #00a8ad;
 }
 .sky-form .checkbox input + i:after {
-	color: #f39c12;
+	color: #00a8ad;
 }
 .sky-form .radio input:checked + i,
 .sky-form .checkbox input:checked + i,
 .sky-form .toggle input:checked + i {
-	border-color: #f39c12;
+	border-color: #00a8ad;
 }
 .sky-form .rating input:checked ~ label {
-	color: #f39c12;
+	color: #00a8ad;
 }
