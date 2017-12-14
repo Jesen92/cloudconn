@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <!-- NAV -->
-            <li><a href="#HOME">HOME</a> </li>
+            <li><a href="#HOME">VCC</a> </li>
             <li><a href="#ABOUT"><%= t(".about") %></a> </li>
             <li><a href="#BAAS">BaaS</a></li>
             <li><a href="#DRAAS">DRaaS</a> </li>
@@ -849,7 +849,7 @@
               <% unless flash[:recaptcha_error].nil? %>
                 <div class="alert alert-danger" role="alert"><%= flash[:recaptcha_error] %></div>
               <% end %>
-              <%= recaptcha_tags callback: 'enableBtn' %>
+
             </div>
           </div>
         <% end %>
