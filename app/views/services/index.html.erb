@@ -849,7 +849,7 @@
               <% unless flash[:recaptcha_error].nil? %>
                 <div class="alert alert-danger" role="alert"><%= flash[:recaptcha_error] %></div>
               <% end %>
-
+              <%= recaptcha_tags callback: 'enableBtn' %>
             </div>
           </div>
         <% end %>
